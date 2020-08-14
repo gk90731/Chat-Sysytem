@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800px, initial-scale=1.0">
+    <title>MacBook Pro - 28</title>
+    <link rel="stylesheet" href="./assets/css/MacBookPro-28.css">
+
+    <!-- link for google material icon------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link for google fonts -------------------------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- link for javascript local file------------------------ -->
+    <script src="./assets/js/MacBookPro-28.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat-summary" style="background-color:#009688;">
+            <div class="navigation">
+                <img src="./assets/img/left-arrow.svg" alt="">
+                <img class="profile-pic-thumbnail" src="./assets/img/profile-pic.jpeg" alt="">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search your Friend"></input>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="category-box">
+                <div class="support-center" onclick="changeNavHeader(event)">
+                    <span>Support center</span>
+                </div>
+                <div class="repair-center" onclick="changeNavHeader(event)">
+                    <span>Repair center</span>
+                </div>
+                <div class="support-center-paid" onclick="changeNavHeader(event)">
+                    <span>Support center paid</span>
+                </div>
+            </div>
+            <div class="recent-border" style="border-bottom: 1px solid #f5f5f57a; "><span
+                    style="background-color:#009688 ;">Recents</span>
+            </div>
+            <div class="all-chats">
+                <div class="team-chat">
+                    <div class="team-thumbnail"></div>
+                    <div class="team-message">
+                        <span class="heading">Team</span>
+                        <span class="message">Welcome Somil... is there any task for you or what ??</span>
+                    </div>
+                    <div class="team-time">3:57</div>
+                </div>
+                <span class="horizontal-line"></span>
+                <div class="individual-chat">
+                    <!-- <div class="individual-thumbnail"></div> -->
+                    <img src="./assets/img/profile-pic.jpeg" class="individual-thumbnail" alt="">
+                    <div class="individual-message">
+                        <span class="heading">Somil Jain</span>
+                        <span class="message">Yes... It will be done!</span>
+                    </div>
+                    <div class="individual-time">3:57</div>
+                </div>
+                <span class="horizontal-line"></span>
+            </div>
+        </div>
+        <div class="chat-detail" style="background-color: #E5DDD5;">
+            <div class="chat-navigation-bar">
+                <div class="left-content">
+                    <span class="support-center" id="nav-header">Support center</span>
+                    <span class="division-bar">|</span>
+                    <img class="document-attachment" src="./assets/img/document-attachment.svg" alt="">
+                    <span class="document-attachment-count">4</span>
+                </div>
+                <div class="right-content">
+                    <div class="nav-search-box">
+                        <i class="fa fa-sort-down icon-down"></i>
+                        <input class="search-input" type="text" placeholder="Search">
+                        <i class="fa fa-search icon-search"></i>
+                    </div>
+                    <div class="more-menu">
+                        <span class="more">More</span>
+                        <i class="fa fa-ellipsis-v more-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="message-body">
+                <div class="messages">
+                    <div class="sender-message-container">
+                        <img src="./assets/img/profile-pic.jpeg" class="sender-pic-thumbnail"></img>
+                        <div class="sender-message-items">
+                            <span class="sender-name-sm">
+                                Arun
+                            </span>
+                            <div class="sender-message-outliner">
+                                <span class="sender-message">One thing we need to know that binding in the constructor has nothing to do.</span>
+                                <div class="sender-message-footer">
+                                    <div class="tag-sm">
+                                        <span class="tag-head">Tags:</span>
+                                        <span class="tag-names">@Repair</span>
+                                        <span class="tag-names">@flash</span>
+                                    </div>
+                                    <div class="sender-actions">
+                                        <span class="action-save-sm">Save</span>
+                                        <span class="action-reply-sm">Reply</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="message-sender-container">
+                    <button class="buy-button-md">Buy</button>
+                    <button class="ask-button-md" onclick="askQustionClick()">Ask a question</button>
+                    <button class="sell-button-md">Sell</span>
+                </div>
+                <div class="message-sender-box">
+                    <div class="input-box">
+                        <input type="text" placeholder="Type something">
+                        <i class="fa fa-image"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
